@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/SpatialNavigation/scenes/Big City B Lures.unity
+  isLoaded: 1
+  isActive: 1

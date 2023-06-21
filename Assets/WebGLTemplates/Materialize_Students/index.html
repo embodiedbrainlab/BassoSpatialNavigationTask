@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | %UNITY_WEB_NAME%</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel ="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+	<script src="js/clipboard.min.js"></script>
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template grey darken-4">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/submit_data.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.modal-trigger').leanModal({
+				dismissible: true
+			});
+			//$('.tooltipped').tooltip({delay: 50});
+		});
+		var clipboard = new Clipboard('.btn');
+		clipboard.on('success',function(e){
+			console.log(e);
+		});
+		clipboard.on('error',function(e){
+			console.log(e);
+		});
+	</script>
+    <p class="header"><span>Unity WebGL Player | </span>%UNITY_WEB_NAME%</p>
+	<div class="navbar-fixed">
+	<nav class="nyu-purple" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" data-target="home_modal" class="modal-trigger brand-logo">Suzuki Lab</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a data-target="submit_modal" class="modal-trigger">Submit</a></li>
+				<li><a data-target="home_modal" class="modal-trigger">Home</a></li>
+			</ul>
+			<ul class="right">
+				<li><a data-target="modal1" class="modal-trigger">Data</a></li>
+			</ul>
+        </div>
+    </nav>
+	</div>
+	<div class="center-align yellow-text text-darken-1">
+		<em>The task may take some time to load, depending on your internet connection. Please be patient. </em><br>
+		<em>When it does load, please perform the task in fullscreen mode by clicking the blue button below.</em>
+	</div>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="%UNITY_HEIGHT%px" width="%UNITY_WIDTH%px"></canvas>
+      <br>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">%UNITY_WEB_NAME%</div>
+    </div>
+    <script type='text/javascript'>
+	  var enc;
+      function setAndDisplayEnc(str)
+      {
+		enc = str;
+        //document.getElementById("data").value = enc;
+		$('#data').val(enc)
+		$('#data').trigger('autoresize')
+		$('#modal1').openModal();
+		//$('#data > p').text(enc);
+      }
+	  function setEnc(str)
+	  {
+		enc = str;
+	  }
+	  function redisplayEnc()
+	  {
+		//document.getElementById("data").value = enc;
+		$('#data').val(enc)
+		$('#data').trigger('autoresize')
+		$('#modal1').openModal();
+		//$('#data > p').text(enc);
+	  }
+	  function submit_to(path) {
+	  	post(path, {data: enc});
+	  }
+    </script>
+    %UNITY_WEBGL_LOADER_GLUE%
+	<div id="modal1" class="modal bottom-sheet">
+		<div class="modal-content">
+			<h2>Your Data</h2>
+			<a class="waves-effect waves-green btn right" onclick="Materialize.toast('Copied to clipboard', 3000, 'rounded')" data-clipboard-target="#data">Copy</a>
+			<div class="input-field col s12">
+				<form class="col s12" id="submission_form" method="POST" target="_blank" action="//www.suzukicognition.com/submit_data">
+                    <div class="row">
+                        <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Submit</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="data" class="materialize-textarea" name="data"></textarea>
+                        </div>
+                    </div>
+                </form>
+			</div>
+		</div>
+	</div>
+	<div id="submit_modal" class="modal">
+		<div class="modal-content">
+			<h4>How do I submit my data?</h4>
+			<p>Once you complete the task, a pop-up should appear from the bottom. This is your data. Ensure that you are still logged in and click the 'Submit' button.</p>
+			<p>If you experience an issue, click the 'Copy' button and navigate to <a target="_blank" href="https://www.suzukicognition.com/submit_data">https://www.suzukicognition.com/submit_data</a> and follow the instructions to paste and submit your data.</p>
+			<p><em class="red-text">Do not close or leave this page until we have confirmed your submission!</em></p>
+		</div>
+		<div class="divider"></div>
+		<div class="modal-footer">
+			<a target="_blank" class="left waves-effect waves-green btn-flat hoverable" href="https://www.suzukicognition.com/submit_data/">Open submission form in a new window</a>
+			<a class="modal-action modal-close waves-effect waves-green btn-flat hoverable">Got it</a>
+		</div>
+	</div>
+	<div id="home_modal" class="modal">
+		<div class="modal-content">
+			<h4>Wait!</h4>
+			<p>Are you sure you meant to navigate away?</p>
+		</div>
+		<div class="divider"></div>
+		<div class="modal-footer">
+			<a class="modal-action modal-close waves-effect waves-green btn-flat hoverable">No.</a>
+			<a href="https://www.suzukicognition.com/" class="modal-action modal-close waves-effect waves-green btn-flat hoverable">Yes!</a>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Light_SingleBulb
+  m_Shader: {fileID: 4800000, guid: 84fc3174a66548f43b28e82ef165e69f, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Emission
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissiveMask
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illumin
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Selfillum
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SelfIllumin
+        second:
+          m_Texture: {fileID: 2800000, guid: 911cf237b92540c4bbd6b65ca7b9f94b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .699999988
+      data:
+        first:
+          name: _EmissionLM
+        second: .349999994
+      data:
+        first:
+          name: _EmissionFactor
+        second: 10
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .514925361, g: .514925361, b: .514925361, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Illum
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Mod2XColor
+        second: {r: .50746268, g: .50746268, b: .50746268, a: 1}
+      data:
+        first:
+          name: _color
+        second: {r: .048951149, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _Emissive
+        second: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Road-Cleaner
+  m_Shader: {fileID: 4800000, guid: d6eb50c293d0edd44b5ad1f8e236e9af, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: aed881658ac4aac49b136f1f7761df08, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalMap
+        second:
+          m_Texture: {fileID: 2800000, guid: aed881658ac4aac49b136f1f7761df08, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 4aeccc216aecf9e48b8d5cfaf31dfa74, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeMask
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cubemap
+        second:
+          m_Texture: {fileID: 8900000, guid: 4aeccc216aecf9e48b8d5cfaf31dfa74, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Bumpmap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _cubemap
+        second:
+          m_Texture: {fileID: 8900000, guid: 4aeccc216aecf9e48b8d5cfaf31dfa74, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _diffuse
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendText
+        second:
+          m_Texture: {fileID: 2800000, guid: a49da78487cdc3145b053e8a7c51cbe3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 1, y: .5}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .400000006
+      data:
+        first:
+          name: _Angle
+        second: 0
+      data:
+        first:
+          name: _Glossiness
+        second: 1
+      data:
+        first:
+          name: _somerange
+        second: -5
+      data:
+        first:
+          name: _MaskBias
+        second: 2.88461542
+      data:
+        first:
+          name: _Subtraction
+        second: .538461566
+      data:
+        first:
+          name: _range
+        second: 14.6153851
+      data:
+        first:
+          name: _range2
+        second: 3.53846145
+      data:
+        first:
+          name: _Contrast
+        second: 4.38461542
+      data:
+        first:
+          name: _Brightness
+        second: .769230783
+      data:
+        first:
+          name: _Specpower
+        second: .100000001
+      data:
+        first:
+          name: _Val1
+        second: 11.8100004
+      data:
+        first:
+          name: _Val2
+        second: 2
+      data:
+        first:
+          name: _exponent
+        second: 10
+      data:
+        first:
+          name: _range1
+        second: .485074639
+      data:
+        first:
+          name: _g
+        second: .350746274
+      data:
+        first:
+          name: _subtract
+        second: 1.04999995
+      data:
+        first:
+          name: _Strength
+        second: 4.5999999
+      data:
+        first:
+          name: _HighlightPow
+        second: 255
+      data:
+        first:
+          name: _Power
+        second: 1.64999998
+      data:
+        first:
+          name: _Range2
+        second: 2.15384603
+      data:
+        first:
+          name: _VectorPower
+        second: 1.7307688
+      data:
+        first:
+          name: _SP
+        second: 2.68000007
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Angle
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: .5}
+      data:
+        first:
+          name: _angle
+        second: {r: 5.09000015, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _specularcolor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Highlight
+        second: {r: 0, g: 2, b: 2, a: 0}
+      data:
+        first:
+          name: _HighlightCol
+        second: {r: .947761178, g: .828660429, b: .643628836, a: 1}
+      data:
+        first:
+          name: _VectorAngle
+        second: {r: -8.85000038, g: 1.47000003, b: -2.20070004, a: -.00999999978}
