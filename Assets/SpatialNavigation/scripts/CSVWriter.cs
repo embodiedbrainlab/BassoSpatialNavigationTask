@@ -22,6 +22,11 @@ public class CSVWriter : MonoBehaviour {
 			for (i = 0; i < dataLength; ++i) {
 				writer.WriteLine(responseArray[i].location + "," + responseArray[i].item + "," + responseArray[i].time);
 			}
+			writer.WriteLine ("User Tracking");
+			writer.WriteLine ("x,z,time");
+			for (i = 0; i < omtComponent.waypointGroups[0].waypointTimeStamp.Count; ++i) {
+				writer.WriteLine (omtComponent.waypointGroups [0].waypointPosition [i].x + "," + omtComponent.waypointGroups [0].waypointPosition [i].z + "," + (omtComponent.waypointGroups [0].waypointTimeStamp [i] - t_recallStart));
+			}
 		}
 	}
 }
